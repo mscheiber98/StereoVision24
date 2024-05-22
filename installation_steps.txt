@@ -1,0 +1,39 @@
+
+conda create -n stereovu
+conda activate stereovu
+conda install python=3.10
+python -m pip install jupyter numpy matplotlib opencv-python tqdm jupyter_compare_view joblib
+jupyter notebook
+
+++++++++++++++++++++++++++++++++++
+
+1. Step - Install miniconda:
+https://docs.anaconda.com/free/miniconda/
+
+2. Step - Test if conda works:
+open anaconda prompt
+in anaconda prompt: conda
+should show: help statement
+tip: in windows you can also use the command shell, but you might need to change the system environment variables to include C:\your_installation_path\miniconda3 and ...miniconda3\Scripts and ...miniconda3\Library\bin the following steps then could also be executed in the command shell
+
+3. Step - Create Environment:
+in anaconda prompt: conda create --name stereovu
+to check: conda info --envs
+
+4. Step - Activate Environment:
+in anaconda prompt: conda activate stereovu
+
+5. Step - Setup Environment:
+in anaconda prompt: conda install python=3.10
+in anaconda prompt: python -m pip install jupyter numpy matplotlib opencv-python tqdm jupyter_compare_view joblib
+
+6. Step - open Jupyter notebook:
+in anaconda prompt: jupyter notebook
+
+7. Step - Closing the notebook:
+in anaconda prompt: CTRL + C
+in jupyter notebook: File -> Shut down
+
+8. Step - Reopening in the future:
+in anaconda prompt: conda activate stereovu
+in anaconda prompt: jupyter notebook
